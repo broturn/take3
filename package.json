@@ -7,11 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  },
   "keywords": [],
   "author": "Brodie Turner <broturn@gmail.com> (https://www.linkedin.com/in/brodie-turner-a82a2b4a/)",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "diskdb": "^0.1.17",
     "express": "^4.17.1"
   }
 }
